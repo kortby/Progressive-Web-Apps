@@ -1,0 +1,12 @@
+.ourForm {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .ourForm > * {
+    width: 100%;
+  }
+
+  mat-form-field, mat-slider {
+    width: 96%;
+  }

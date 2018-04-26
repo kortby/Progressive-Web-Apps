@@ -1,0 +1,38 @@
+{
+    "index": "/index.html",
+    "routing": {
+        "index" : "index.html",
+        "routes" : {
+            "/" : {
+                "match" : "exact"
+            },
+            "/coffee" : {
+                "match" : "prefix"
+            }
+        }
+    },
+    "assetGroups": [{
+      "name": "app",
+      "installMode": "prefetch",
+      "resources": {
+        "files": [
+          "/favicon.ico",
+          "/index.html"
+        ],
+        "versionedFiles": [
+          "/*.bundle.css",
+          "/*.bundle.js",
+          "/*.chunk.js"
+        ]
+      }
+    }, {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "resources": {
+        "files": [
+          "/assets/**"
+        ]
+      }
+    }]
+  }
